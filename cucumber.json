@@ -1,0 +1,17 @@
+{
+  "default": {
+    "require": [
+      "tests/features/step-definitions/*.ts"
+    ],
+    "format": [
+      "progress",
+       "cucumberjs-allure2-reporter"
+       
+    ],
+    "paths": [
+      "tests/features/*.feature"
+    ],
+    "parallel": 0,
+    "retry": 0
+  }
+}

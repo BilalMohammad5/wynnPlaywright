@@ -1,0 +1,30 @@
+{
+  "name": "wynnplaywright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+"scripts": {
+  "test": "cucumber-js --require-module ts-node/register --require tests/features/step-definitions/**/*.ts tests/features/**/*.feature --format progress --format json:test-results/allure-results/result.json",
+  "allure:generate": "allure generate test-results/allure-results --clean -o allure-report",
+  "allure:open": "allure open allure-report"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "@playwright/test": "^1.52.0",
+    "bcryptjs": "^3.0.2",
+    "csv-parser": "^3.2.0",
+    "dotenv": "^16.5.0",
+    "exceljs": "^4.4.0",
+    "pg": "^8.15.6",
+    "reportportal-client": "^5.5.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@reportportal/agent-js-cucumber": "^5.5.1",
+    "allure-playwright": "^3.2.1"
+  }
+}

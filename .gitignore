@@ -74,6 +74,7 @@ web_modules/
 
 # dotenv environment variable files
 .env
+.env.*
 .env.development.local
 .env.test.local
 .env.production.local
@@ -93,8 +94,6 @@ dist
 
 # Gatsby files
 .cache/
-# Comment in the public line in if your project uses Gatsby and not Next.js
-# https://nextjs.org/blog/next-9-1#public-directory-support
 # public
 
 # vuepress build output
@@ -128,9 +127,39 @@ dist
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
 
-# yarn v2
+# Yarn v2
 .yarn/cache
 .yarn/unplugged
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# ------------------------------
+# Playwright / Cucumber / Allure Specific
+# ------------------------------
+# Test outputs
+test-results/
+allure-results/
+allure-report/
+output/
+playwright-report/
+playwright/.cache/
+
+# Screenshots, Videos, Traces
+*.png
+*.webm
+*.zip
+*.trace.zip
+
+# Editor folders
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Misc
+Thumbs.db
+.DS_Store
